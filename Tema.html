@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Tema HTML Calburean Andrei
+    </title>
+</head>
+<body>
+    <h1>
+        Planets
+    </h1>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th scope="col" colspan="2">    </th>
+                <th scope="col">Name</th>
+                <th scope="col">Mass (10<sup>24kg</sup>)</th>
+                <th scope="col">Diameter (km)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row" colspan="2" rowspan="4">Terrestrial planets</td>
+                <td scope="row">Mercury</td>
+                <td scope="row">0.330</td>
+                <td scope="row">4,879</td>
+            </tr>
+            <tr>
+                <td scope="row" >Venus</td>
+                <td scope="row">4,87</td>
+                <td scope="row">12.104</td>
+            </tr>
+            <tr>
+                <td scope="row" >Earth</td>
+                <td scope="row">5,97</td>
+                <td scope="row">12.756</td>
+            </tr>
+            <tr>
+                <td scope="row" >Mars</td>
+                <td scope="row">0,642</td>
+                <td scope="row">6.792</td>
+            </tr>
+            <tr>
+                <td scope="row" rowspan="4">Jovian planets</td>
+                <td scope="row" rowspan="2">Gas Giants</td>
+                <td scope="row" >Jupiters</td>
+                <td scope="row">1898</td>
+                <td scope="row">142,984</td>
+
+            </tr>
+            <tr>
+                <td scope="row" >Saturn</td>
+                <td scope="row">568</td>
+                <td scope="row">120,536</td>
+            </tr>
+            <tr>
+                <td scope="row" rowspan="2">Ice Giants</td>
+                <td scope="row" >Uranus</td>
+                <td scope="row">86.8</td>
+                <td scope="row">51,118</td>
+            </tr>
+            <tr>
+                <td scope="row" >Neptune</td>
+                <td scope="row">102</td>
+                <td scope="row">6.792</td>
+            </tr>
+            <tr>
+                <td scope="row" colspan="2">Dwarf planets</td>
+                <td scope="row">Pluto</td>
+                <td scope="row">0.0146</td>
+                <td scope="row">2,370</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+
+    <form novalidate method="POST">
+        <fieldset>
+          <legend>Ask us about planets</legend>
+          <div>
+            <label for="username">Full Name: </label>
+            <input id="username" type="text" name="Full Name" required minlength="4" maxlength="10" />
+          </div>
+
+          <br>
+
+          <div>
+            <label for="email">Email: </label>
+            <input id="email" type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+          </div>
+
+          <p>Favorite planet:</p>
+          <br>
+          <form>
+            <input type="radio" name="Mercury" value="Mercury">Mercury<br>
+            <input type="radio" name="Venus" value="Venus">Venus<br>
+            <input type="radio" name="Earth" value="Earth" checked>Earth<br>
+            <input type="radio" name="Mars" value="Mars">Mars<br>
+            <input type="radio" name="Jupiter" value="Jupiter">Jupiter<br>
+            <input type="radio" name="Saturn" value="Saturn" >Saturn<br>
+            <input type="radio" name="Uranus" value="Uranus">Uranus<br>
+            <input type="radio" name="Neptune" value="Neptune">Neptune<br>
+            <input type="radio" name="Pluto" value="Pluto" >Pluto<br><br>
+            <input type="checkbox" id="accept-terms" name="accept-terms">I agree to the terms and conditions</button><br><br>
+            <input type="reset" name="Reset" value="Reset">
+            <input type="submit" name="Ask away" value="Ask away">
+
+
+          </form><br> 
+        </fieldset>
+        
+</body>
+</html>
